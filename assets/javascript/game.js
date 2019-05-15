@@ -73,6 +73,7 @@ $("#random").text(randomNumber);
     alert("You won!");
     totalWins++; 
       $("#wins").text(totalWins);
+      delete totalScore;
       reset();
     }
     //addes the losses to the totalScore
@@ -80,6 +81,7 @@ function lose(){
     alert ("You lose!");
     totalLosses++;
       $("#losses").text(totalLosses);
+      delete totalScore;
       reset()
     }
 }
