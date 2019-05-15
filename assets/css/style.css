@@ -1,0 +1,68 @@
+
+.page_wrp {
+background-image: url("../images/bg.jpg");
+
+height: 100vh;
+padding-left: 3%;
+}
+
+h1 {
+color: #fff;
+font-size: 32px;
+background-color: brown;
+display: inline-block;
+margin: 10px 0px 10px 0px;
+padding: 20px;
+}
+
+.rules_wrp {
+height: 390px;
+width: 390px;
+background-color: bisque;
+}
+
+.rule_text {
+font-weight: bold;
+font-size: 16px;
+color: green;
+padding: 25px 10px 0px 10px;
+}
+
+
+.random_number {
+margin-top: 20px;
+background-color: green;
+width: 195px;
+height: 70px;
+float :left;
+margin-bottom: 20px;
+margin-right: 20px;
+}
+
+
+.table_wrp {
+margin-top: 20px;
+padding-top: 10px;
+height: 60px;
+width: 90px;
+background-color: aqua;
+display: inline-block;
+margin-bottom: 20px;
+padding-left: 5px;
+}
+
+#score {
+color: #fff;
+margin: 10px 0px 10px 0px;
+background-color: #20B2AA;
+width: 175px;
+padding: 10px;
+}
+
+#total_score {
+color: #fff;
+background-color: #20B2AA;
+width: 175px;
+height: 90px;
+padding: 10px;
+}
