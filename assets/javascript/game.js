@@ -18,12 +18,11 @@ $("#random").text(randomNumber);
  number2 = Math.floor(Math.random() * 11 + 1);
  number3 = Math.floor(Math.random() * 11 + 1);
  number4 = Math.floor(Math.random() * 11 + 1);
- 
+ totalScore=0;
  //show scores
  $("#total_score").text(totalScore);
  $("#wins").text(totalWins);
  $("#losses").text(totalLosses);
-
  $("#blue").on ('click', function(){
     totalScore = totalScore + number1;
     $("#total_score").text(totalScore); 
@@ -49,9 +48,7 @@ $("#random").text(randomNumber);
 
       $("#purple").on ('click', function(){
         totalScore = totalScore + number3;
-        // console.log("New userTotal= " + number1);
         $("#total_score").text(totalScore); 
-              //sets win/lose conditions
             if (totalScore == randomNumber){
               win();
             }
@@ -61,9 +58,7 @@ $("#random").text(randomNumber);
           }) 
           $("#yellow").on ('click', function(){
             totalScore = totalScore + number3;
-            // console.log("New userTotal= " + number1);
             $("#total_score").text(totalScore); 
-                  //sets win/lose conditions
                 if (totalScore == randomNumber){
                   win();
                 }
@@ -73,7 +68,7 @@ $("#random").text(randomNumber);
               }) 
 
 
-
+//addes the losses to the totalScore
  function win(){
     alert("You won!");
     totalWins++; 
